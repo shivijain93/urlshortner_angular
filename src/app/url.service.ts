@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
+  
 })
 export class UrlService {
 
@@ -12,9 +13,9 @@ export class UrlService {
 
   
   postURL(data): Observable<any> {
-    return this.http.post('https://nodejs-urlshort.herokuapp.com//create', data)
+    return this.http.post('https://nodejs-urlshort.herokuapp.com/create', data)
   }
   getURLs(): Observable<any> {
-    return this.http.get('https://nodejs-urlshort.herokuapp.com//view')
+    return this.http.get('https://nodejs-urlshort.herokuapp.com/view')
   }
 }
