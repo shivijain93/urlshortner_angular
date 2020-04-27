@@ -12,9 +12,9 @@ export class UrlService {
 
   
   postURL(data): Observable<any> {
-    return this.http.post('http://localhost:3000/create', data)
+    return this.http.post('https://nodejs-urlshort.herokuapp.com//create', data)
   }
   getURLs(): Observable<any> {
-    return this.http.get('http://localhost:3000/view')
+    return this.http.get('https://nodejs-urlshort.herokuapp.com//view')
   }
 }
